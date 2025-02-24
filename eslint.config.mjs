@@ -138,7 +138,7 @@ const tsRules = {
     '@typescript-eslint/consistent-type-exports': 'error',
 };
 
-/** Separate config for .js files which is applied internally */
+/** Separate config for .js, *.cjs and *.mjs files which is applied internally */
 const plainJsConfig = {
     ...tseslint.configs.disableTypeChecked,
     rules: {
@@ -173,7 +173,7 @@ export default tseslint.config(
         rules: tsRules,
     },
     {
-        files: ['**/*.js'],
+        files: ['**/*.js', '**/*.cjs', '**/*.mjs' ],
         ...plainJsConfig,
     },
 );
