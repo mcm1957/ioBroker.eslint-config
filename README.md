@@ -55,7 +55,7 @@ It is suggested to create separate `eslint.config.mjs` files for backend and for
 -->
 ### **WORK IN PROGRESS**
 
--   (mcm1957) remove typescript peerDependency
+-   (mcm1957) typescript peerDependency has been removed
   
 ### 2.0.0 (2025-03-04)
 
